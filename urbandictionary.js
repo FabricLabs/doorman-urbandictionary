@@ -1,6 +1,6 @@
 const urban = require('urban');
 
-module.exports = function (Kirbi) {
+module.exports = function (Doorman) {
 	return {
 		commands: [
 			'urban'
@@ -27,7 +27,7 @@ module.exports = function (Kirbi) {
 
 					cb({
 						embed: {
-							color: Kirbi.Config.discord.defaultEmbedColor,
+							color: Doorman.Config.discord.defaultEmbedColor,
 							title,
 							description: message,
 							footer: {
